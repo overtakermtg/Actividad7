@@ -6,7 +6,14 @@
 	<title></title>
 	<link rel="stylesheet" href="">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<style>
 		body {
@@ -15,28 +22,36 @@
 			flex-direction: column;
 		}
 
-		main {
-			
+		.page-footer{
+			background-color: transparent;
+			color: black;
 		}
 
-		.top{
-			background-image: url(images/bg.jpeg);
-			min-height: 500px;
+		.footer-bot{
+			background-color: black;
+			color: white;
 		}
 
 		.logo-desafio{
-			width: 250px;
+			width: 200px;
+		}
+
+		.img_familia{
+			margin: 0 auto;
+			max-width: 400px;
+		}
+		.top{
+			background-image: url(images/bg.jpeg);
+			min-height: 400px;
 		}
 
 		.top h1{
 			text-transform: uppercase;
 			color: white;
-			font-size: 55px;
-		}
 
+		}
 		.top h5{
 			color: white;
-			font-size: 20px;
 		}
 
 		nav{
@@ -45,45 +60,9 @@
 
 		nav ul li a{
 			font-size: 20px;
-			color: #424242;
+			color: white;
 		}
 
-		.page-footer{
-			background-color: transparent;
-			color: black;
-		}
-		.first{
-			clear: both;
-			text-align: center;
-		}
-
-		.first h3{
-			text-transform: uppercase;
-			font-size: 30px;
-		}
-
-		.first h4{
-			font-size: 15px;
-		}		
-
-		.first img{
-			max-height: 400px;
-		}	
-
-
-		.second{
-			clear: both;
-			text-align: center;
-		}
-
-		.second h3{
-			text-transform: uppercase;
-			font-size: 30px;
-		}
-
-		.second h4{
-			font-size: 15px;
-		}
 	</style>
 
 </head>
@@ -91,46 +70,64 @@
 
 <div class="top">
 
-		<nav>
-			<div class="nav-wrapper">
-			<a href="#" class="brand-logo"><img class="logo-desafio" src="images/latam_logo.png" alt=""></a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="#">Equipo</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contacto</a></li>
-				</ul>
-			</div>
+		<nav class="navbar ">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="brand" href="#"><img class="logo-desafio" src="images/latam_logo.png" alt=""></a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Equipo</a></li>
+		        <li><a href="#">Blog</a></li>	
+		        <li><a href="#">Contacto</a></li>	        
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
 		</nav>
 
-	<div class="container center-align">
+
+	<div class="container text-center col-md-12">
 		<h1>Comienza una nueva vida y únete al mundo tecnológico</h1>
 
-		<a class="waves-effect waves-light btn blue">Comiena acá!</a>
-		<a class="waves-effect waves-light btn green">Más Info</a>
+		<button class="btn btn-primary btn-lg" type="button">Comiena acá!</button>
+		<button class="btn btn-success btn-lg" type="button">Más info!</button>
 
 		<h5 class="center-align">Hay una escasez gigante de desarrolladores en el mundo y más en Latinoamérica, se necesitan más desarrolladores y Tú puedes ser uno!</h5>
 	</div>
 
+
 </div>
 
-<div class="first">
+
+<div class="container text-center col-md-12">
 	<h3>El BootCamp de programación más grande de latinoamérica</h3>
 	<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In neque neque, dignissim sed pretium nec, vehicula at urna. Donec sit amet erat felis. Proin vitae dictum magna.</h4>
-	<img src="images/viewing-gallery-for-happy-people.png" alt="">
+	<img class="img_familia img-responsive" src="images/viewing-gallery-for-happy-people.png">
 </div>
 
-	
-<div class="second">
-	<h3>Solicita Información e inscríbete</h3>
-	<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In neque neque, dignissim sed pretium nec, vehicula at urna. Donec sit amet erat felis. Proin vitae dictum magna.</h4>
-	<a class="waves-effect waves-light btn blue">Incribete</a>
-	<h4>Vive la experiencia Desafío Latam!</h4>
+<div class="jumbotron">
+	<div class="container text-center col-md-12">
+		<h3>Solicita Información e inscríbete</h3>
+		<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In neque neque, dignissim sed pretium nec, vehicula at urna. Donec sit amet erat felis. Proin vitae dictum magna.</h4>
+		<button class="btn btn-primary btn-lg " type="button">Incribete</button>
+		<h4>Vive la experiencia Desafío Latam!</h4>
+	</div>
 </div>
 
-	<footer class="page-footer">
+<footer class="page-footer">
           <div class="container">
             <div class="row">
-              <div class="col l6 s12">
+              <div class="col-md-6">
 					<h5 class="white-text">Contacto</h5>
 					<ul>
 						<li>Desafio Latam</li>
@@ -139,7 +136,9 @@
 						<li><a href="#">inscripciones@desafiolatam.com</a></li>
 					</ul>
               </div>
-              <div class="col l4 offset-l2 s12">
+
+
+              <div class="col-md-6">
                 <h5 class="white-text">Links</h5>
                 <ul>
                   <li>Suscribete</li>
@@ -150,13 +149,14 @@
 	
                 </ul>
               </div>
+
             </div>
           </div>
-          <div class="footer-copyright black">
-            <div class="container">
-            © 2014 Copyright Overtaker!
+
+            <div class="jumbotron text-center footer-bot col-md-12">
+            <h4>© 2014 Copyright Overtaker!</h4>
             </div>
-          </div>
-        </footer>
+
+</footer>
 </body>
 </html>
